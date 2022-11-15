@@ -3,20 +3,12 @@ public class Coffee {
 	private int nameNum;
 	private int sizeNum;
 	private int sizePrice = 0;
-	private boolean hotAndIce;
+	private int hotAndIce;
 	
 	private final int AMERICANO = 2000;
 	private final int CAFE_LATTE = 2500;
 	private final int CAFFE_MOCHA = 2600;
 	
-	
-
-
-
-
-
-
-
 	public int getSizePrice() {
 		return sizePrice;
 	}
@@ -29,7 +21,7 @@ public class Coffee {
 
 
 
-	public Coffee(int nameNum, int sizeNum, boolean hotAndIce) {
+	public Coffee(int nameNum, int sizeNum, int hotAndIce) {
 		this.nameNum = nameNum;
 		this.sizeNum = sizeNum;
 		this.hotAndIce = hotAndIce;
@@ -61,17 +53,18 @@ public class Coffee {
 
 
 
-	public boolean isHotAndIce() {
+
+
+
+	public int getHotAndIce() {
 		return hotAndIce;
 	}
 
 
 
-
-	public void setHotAndIce(boolean hotAndIce) {
+	public void setHotAndIce(int hotAndIce) {
 		this.hotAndIce = hotAndIce;
 	}
-
 
 
 
